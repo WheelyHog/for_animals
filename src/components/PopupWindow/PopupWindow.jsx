@@ -118,7 +118,7 @@ export default function PopupWindow({ menuActive, setMenuActive, productList }) 
 
             <div className={s.form_section}>
               <label>
-                Add Subategory:
+                Add Subcategory:
                 <input
                   placeholder='Nazwa '
                   {...addSubcategoryInput}
