@@ -1,0 +1,80 @@
+.form_inner {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal_content {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: white;
+
+  transform: scale(0.5);
+  transition: 0.4s all;
+}
+
+.modal_content.active {
+  transform: scale(1);
+}
+
+.message_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.close_btn {
+  align-self: flex-end;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.form_section label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.form_section textarea {
+  height: 100px;
+  resize: none;
+}
+
+.add_btn {
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid darkgreen;
+  color: #fff;
+  background-color: darkgreen;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.add_btn:hover {
+  background-color: rgb(1, 139, 1);
+}

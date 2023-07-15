@@ -1,0 +1,56 @@
+.filter_wrapper {
+  margin: 20px 0;
+  display: flex;
+  gap: 50px;
+}
+
+.add_product_btn {
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid darkgreen;
+  color: #fff;
+  background-color: darkgreen;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.currency button {
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid darkgreen;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.add_product_btn:hover,
+.currency button:hover {
+  background-color: rgb(1, 139, 1);
+  color: #fff;
+}
+
+.filter_sort {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter_sort_title {
+  font-size: 18px;
+}
+
+select,
+input,
+textarea {
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding-left: 10px;
+}
+
+.currency {
+  display: flex;
+  gap: 10px;
+}
