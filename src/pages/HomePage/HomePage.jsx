@@ -8,7 +8,7 @@ import CategoryItem from '../../components/CategoryItem/CategoryItem'
 
 export default function HomePage() {
   const category_images = [
-    'https://ae01.alicdn.com/kf/S91e3cf0a5b7640d39f03708f980b05bdn.jpg',
+    'https://avatars.dzeninfra.ru/get-zen_doc/15270/pub_5c7be413a3b8d000b32a782a_5c7be43fd8720e00b38a7134/scale_1200',
     'https://rem-stroitelstvo.ru/wp-content/uploads/2016/09/domik.jpg',
     'https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg'
   ]

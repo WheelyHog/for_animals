@@ -26,7 +26,7 @@ function App() {
     <div className="container">
       <Header />
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path='/*' element={<HomePage />} />
         <Route path='/products' element={<ProductListPage productList={productList} pageTitle={pageTitle} />} />
       </Routes>
     </div>
