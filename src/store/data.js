@@ -119,3 +119,4 @@ export const data = [
     image: 'https://a.allegroimg.com/original/11d19b/9fc789dd43c19c5ce7f81f353efa/DOMEK-KLATKA-LEGOWISKO-DLA-SWINKI-MORSKIEJ-GRYZONI-Kod-producenta-P16'
   },
 ]
+

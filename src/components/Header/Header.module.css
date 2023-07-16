@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  height: 70px;
+  background-color: rgba(0, 0, 0, .6);
+  align-items: center;
+}
+
+.header a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+.header :global(a.active) {
+  color: yellowgreen;
+}

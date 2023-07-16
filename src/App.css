@@ -1,15 +1,4 @@
 .container {
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto;
-}
-
-.active {
-  height: 30px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 1px solid darkgreen;
-  background-color: darkgreen;
-  transition: all .3s;
-  cursor: pointer;
-  color: #fff;
 }

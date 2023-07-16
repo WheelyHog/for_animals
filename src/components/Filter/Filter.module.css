@@ -1,7 +1,9 @@
 .filter_wrapper {
-  margin: 20px 0;
+  padding: 20px 15px 30px;
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
+  background-color: rgba(255, 255, 255, .6);
 }
 
 .add_product_btn {
@@ -22,6 +24,17 @@
   border: 1px solid darkgreen;
   transition: all .3s;
   cursor: pointer;
+}
+
+.currency :global(button.active) {
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid darkgreen;
+  background-color: darkgreen;
+  transition: all .3s;
+  cursor: pointer;
+  color: #fff;
 }
 
 .add_product_btn:hover,

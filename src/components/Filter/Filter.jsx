@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import {
   sort_by_default,
@@ -6,7 +6,8 @@ import {
   sort_by_price_asc,
   sort_by_name_az,
   sort_by_name_za,
-  change_currency
+  change_currency,
+  searchFilterByKeywords
 } from '../../store/reducers/productListSlice';
 import PopupWindow from '../PopupWindow/PopupWindow'
 import s from './Filter.module.css'
@@ -15,6 +16,7 @@ export default function Filter({ pageTitle, productList, currency, setCurrency }
 
   const [menuActive, setMenuActive] = useState(false)
   const [activeBtn, setActiveBtn] = useState(null)
+  const [keywords, setKeywords] = useState('')
 
   const dispatch = useDispatch();
 
@@ -83,6 +85,14 @@ export default function Filter({ pageTitle, productList, currency, setCurrency }
     );
   };
 
+  useEffect(() => {
+    dispatch(searchFilterByKeywords(keywords))
+  }, [keywords])
+
+  const handleKeywords = ({ target }) => {
+    setKeywords(target.value)
+  }
+
   return (<div>
     <PopupWindow
       menuActive={menuActive}
@@ -104,8 +114,10 @@ export default function Filter({ pageTitle, productList, currency, setCurrency }
         </select>
       </div>
       <div className={s.currency}>
-
         {['PLN', 'USD', 'EUR'].map((buttonId) => renderButton(buttonId))}
+      </div>
+      <div className={s.search}>
+        <input type={'search'} placeholder={'search...'} value={keywords} onChange={handleKeywords} />
       </div>
     </div>
   </div >

@@ -9,4 +9,8 @@
 body {
   background: rgb(233, 238, 248);
   font-family: 'Nunito', sans-serif;
+  /* background-image: url('./assets/images/bg.jpg'); */
+  background-color: #b8b6b6;
+  background-repeat: repeat;
+  background-size: contain;
 }
